@@ -1,0 +1,12 @@
+Feature: PunchIn Verification
+
+
+    Given I open the login page
+    When I enter username "admin" and password "admin123"
+    And I click the login button
+
+
+  Scenario: Toast message appears after PunchIn
+    Given User is logged in
+    When User clicks PunchIn
+    Then Toast message "Punch In successfully" should be displayed
